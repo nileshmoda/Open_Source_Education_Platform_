@@ -18,7 +18,7 @@ session_start();
 	if (empty($image)) $image = "download.png";
 	                      $_SESSION["profile_image"] = $image;
 								        header("Location:home.php");
-}else  {  header("Location:index.php?id=error&v=Error: incorrect username/password");
+}else  {  header("Location:index.php?id=error&v=Error: incorrect username/Password");
        }
 }else  {  header("Location:index.php?id=error&v=Error: All field are mandatory");
        }
